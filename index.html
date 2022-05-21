@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Task Todo</title>
+</head>
+
+<body>
+  <h1>Welcome To AppToDo</h1>
+  <div class="container col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <button id="survayModel" class="btn btn-primary">Show Model</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div id="noData" class="alert alert-danger">
+      <h5>No Item added</h5>
+    </div>
+    <div id="allData" class="row">
+    </div>
+  </div>
+
+  <div id="Model" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Enter Data here</h5>
+          <button type="button" onclick="showSurvay()" class="btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>UserName:</label>
+            <input id="sInput" type="text">
+            <div id="emptyAlert" class=" none alert alert-danger">
+              You must enter your name
+              <i id="closeBtn" class="fa-solid fa-square-xmark"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email: </label>
+            <input id="sInput" type="email">
+          </div>
+          <div class="form-group">
+            <label>Phone:</label>
+            <input id="sInput" type="text">
+          </div>
+          <button id="addBtn" class="btn btn-secondary">Add</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" onclick="showSurvay()" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

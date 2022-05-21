@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(25, 22, 22);
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+.btn{
+    width: 100%;
+}
+
+.container .form-group{
+    padding: 10px ;
+    color: white;
+}
+.card{
+    background-color: rgb(57, 56, 56);
+    color: white;
+    margin: 10px 5px;
+}
+
+.deleteBtn{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(200, 11, 11);
+    border-radius: 2px;
+    border: 5px solid rgb(221, 11, 11);
+    float: right;
+}
+.deleteBtn:hover{
+    color: white;
+}
+
+
+#emptyAlert{
+    margin-top: 10px;
+}
+
+#emptyAlert i{
+float: right;
+font-size: 23px;
+cursor: pointer;
+}
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
+
+#Model .modal-body .btn
+{
+    margin-top: 7px;
+}  
+#Model .modal-body .form-group
+{
+    margin-bottom: 20px;
+}
+
+#Model .modal-body .form-group input
+{
+    width: 100%;
+}
